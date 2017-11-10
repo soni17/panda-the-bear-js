@@ -107,17 +107,27 @@ for (i=0; i<10; i++){
 3-------------------------------------
 
 var bioInfo = document.querySelector(".bio-info");
+
 var li = document.createElement('li');
 
 var firstSpan = document.createElement('span');
+
 var lastUpdated = document.createTextNode('Page last updated on');
+
 firstSpan.appendChild(lastUpdated);
+
 firstSpan.classList.add('bio-info-title');
 
 var secondSpan = document.createElement('span');
+
 secondSpan.innerText = Date();
+
 secondSpan.classList.add('bio-info-value');
 
 li.appendChild(firstSpan);
+
 li.appendChild(secondSpan);
+
 bioInfo.appendChild(li);
+
+
